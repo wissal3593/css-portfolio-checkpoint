@@ -1,0 +1,233 @@
+/*general*/
+body {
+    font-family: 'Sofia','Times New Roman', serif ;
+    font-size: 20px;
+    font-style: italic;
+}
+h3 {
+    color:rgb(241, 37, 1);
+    margin: 10px;
+    font-size: 30px;
+    }
+h1{
+        color: rgb(1, 75, 75);
+        margin: 20px 0px;
+    }
+ h4{
+        color: rgb(4, 51, 95);
+        margin: 20px;
+    }
+h5{
+      color:white;
+      size: 35px ;
+      letter-spacing: 3px;
+    }
+ h1, h4, h3, h5{
+    text-align: center;
+  }
+button{
+    border-radius: 15px;
+    padding: 10px 25px;
+    margin: 10px 3px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow : 0px 9px rgb(161, 161, 161);
+}
+button:hover {
+    background-color:black;
+}
+button:active{
+    background-color:black;
+    box-shadow : 0px 6px rgb(92, 91, 91);
+    transform: translateY(5px);
+}
+::selection {
+    color: white;
+    background: rgb(63, 81, 250);
+  }
+  /*header & nav bar*/
+.logo{
+    position: fixed;
+    background-color:rgb(85, 85, 85);
+    letter-spacing: 3px;
+    color: white;
+    padding: 12px 16px; 
+    height: 15px;
+    width: 100%;
+}
+nav{
+    height: 65px;
+}
+nav ul {
+    position: fixed;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color:rgb(85, 85, 85);
+    height: 45px;
+    top: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li a {
+   color: white;
+    text-decoration: none;
+    padding: 9px 16px; 
+}
+nav ul li a:hover {
+    background-color: #111;
+    transition: 1s;
+  }
+@media only screen and (max-width: 576px) {
+ nav ul { 
+     height: 200px;
+     flex-direction: column;
+    text-align: center;
+   }}
+        /*main*/
+  /*about*/
+div.about{
+    padding: 10px;
+    margin: 0px;
+    background-color: rgb(90, 240, 240);
+}
+.img-1{
+    text-align: center; 
+}
+.img {
+ margin: 15px;
+ opacity: 0.5;
+}
+.img:hover{
+ cursor: pointer;
+ width:5%;
+opacity: 1;
+}
+.hobbies-row{
+    display: flex;
+    justify-content:center;
+}
+.hobbies-column img {
+width:320px;
+height: 250px;
+}
+.hobbies-column{
+    background-color: rgb(88, 139, 170);
+    border-radius: 5px;
+    margin: 10px 30px;
+    padding: 10px;
+}
+.hobbies-column:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px white;
+}
+.iframe{
+    display: flex;
+    justify-content:center;
+}
+iframe{
+    width: 500px;
+    height: 315px ;
+    margin: 5px 10px 20px;
+}
+iframe:hover{
+    box-shadow: 5px 5px 10px white;
+}
+/*projects*/
+div.projects{
+    padding: 10px 10px 25px;
+    margin: 0px;
+    background-color:rgb(194, 255, 133) ;
+}
+.projects-column {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-column-gap:25px ;
+}
+.projects-row, .projects-row-1 {
+background-color: rgba(123, 156, 3, 0.767);
+border-radius: 20px;
+box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2), 0 9px 30px rgba(0, 0, 0, 0.19);
+padding: 20px;
+grid-row-start: 1;
+grid-row-end: 3;
+}
+.src{
+    width: 200px;
+    height: 250px;
+    transform: translate(120px,0px);
+}
+.projects-row > button{
+    margin-top: 25px;
+    } 
+.src-1{
+    width: 220px;
+    height: 200px;
+    transform: translate(120px,25px);
+}
+.projects-row-1 > h4{
+    transform: translate(0px,50px);
+} 
+.projects-row-1 > p{
+    transform: translate(0px,50px);
+} 
+.projects-row-1 > button{
+margin-top: 50px;
+} 
+/*contact & footer*/
+div.contact, footer{
+    padding: 10px;
+    margin: 0px;
+    background-color:rgb(250, 250, 115);
+}
+form{
+    display: flex;
+    justify-content:center;
+}
+table{
+    border-radius: 50px;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: rgb(233, 253, 47);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2)
+}
+td {
+  width: 50%;
+  color: blue;
+  font-weight: bold;
+}
+.form:focus{
+    background-color: rgb(238, 237, 237);
+}
+footer{
+    text-align: center;
+}
+.fa{
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 2px;
+  border-radius: 50%;  
+  cursor: pointer;
+  font-size:40px;
+} 
+.fa:hover {
+    opacity: 0.8;
+}
+.fa-yahoo {
+    background: #430297;
+    color: white;
+  }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
